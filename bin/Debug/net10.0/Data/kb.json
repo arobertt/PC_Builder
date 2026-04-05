@@ -1,0 +1,197 @@
+{
+  "premise_posibile": [
+    "scop_gaming",
+    "scop_birou",
+    "scop_editare_video",
+    "scop_programare",
+    "scop_scoala",
+    "buget_mic",
+    "buget_mediu",
+    "buget_mare"
+  ],
+
+  "reguli": [
+    { "id": "R01", "daca": ["scop_gaming", "buget_mic"],          "atunci": "config_gaming_buget_mic" },
+    { "id": "R02", "daca": ["scop_gaming", "buget_mediu"],        "atunci": "config_gaming_buget_mediu" },
+    { "id": "R03", "daca": ["scop_gaming", "buget_mare"],         "atunci": "config_gaming_buget_mare" },
+    { "id": "R04", "daca": ["scop_birou", "buget_mic"],           "atunci": "config_birou_buget_mic" },
+    { "id": "R05", "daca": ["scop_birou", "buget_mediu"],         "atunci": "config_birou_buget_mediu" },
+    { "id": "R06", "daca": ["scop_birou", "buget_mare"],          "atunci": "config_birou_buget_mare" },
+    { "id": "R07", "daca": ["scop_editare_video", "buget_mic"],   "atunci": "config_editare_buget_mic" },
+    { "id": "R08", "daca": ["scop_editare_video", "buget_mediu"], "atunci": "config_editare_buget_mediu" },
+    { "id": "R09", "daca": ["scop_editare_video", "buget_mare"],  "atunci": "config_editare_buget_mare" },
+    { "id": "R10", "daca": ["scop_programare", "buget_mic"],      "atunci": "config_programare_buget_mic" },
+    { "id": "R11", "daca": ["scop_programare", "buget_mediu"],    "atunci": "config_programare_buget_mediu" },
+    { "id": "R12", "daca": ["scop_programare", "buget_mare"],     "atunci": "config_programare_buget_mare" },
+    { "id": "R13", "daca": ["scop_scoala", "buget_mic"],          "atunci": "config_scoala_buget_mic" },
+    { "id": "R14", "daca": ["scop_scoala", "buget_mediu"],        "atunci": "config_scoala_buget_mediu" },
+    { "id": "R15", "daca": ["scop_scoala", "buget_mare"],         "atunci": "config_scoala_buget_mare" }
+  ],
+
+  "configuratii": {
+    "config_gaming_buget_mic": {
+      "descriere": "Gaming Entry-Level",
+      "cpu": "AMD Ryzen 5 5500",
+      "gpu": "NVIDIA GTX 1660 Super",
+      "ram": "16GB DDR4 3200MHz",
+      "stocare": "512GB SSD SATA",
+      "placa_de_baza": "B450M DS3H",
+      "sursa": "550W 80+ Bronze",
+      "pret_estimat": "~2000-2500 lei"
+    },
+    "config_gaming_buget_mediu": {
+      "descriere": "Gaming Mid-Range",
+      "cpu": "AMD Ryzen 5 5600",
+      "gpu": "NVIDIA RTX 3060",
+      "ram": "16GB DDR4 3600MHz",
+      "stocare": "1TB NVMe SSD",
+      "placa_de_baza": "B550 AORUS Elite",
+      "sursa": "650W 80+ Gold",
+      "pret_estimat": "~3500-4500 lei"
+    },
+    "config_gaming_buget_mare": {
+      "descriere": "Gaming High-End",
+      "cpu": "Intel Core i7-13700K",
+      "gpu": "NVIDIA RTX 4070",
+      "ram": "32GB DDR5 5600MHz",
+      "stocare": "1TB NVMe SSD Gen4",
+      "placa_de_baza": "Z790 AORUS Master",
+      "sursa": "750W 80+ Gold",
+      "pret_estimat": "~7000-9000 lei"
+    },
+    "config_birou_buget_mic": {
+      "descriere": "Office Basic",
+      "cpu": "Intel Core i3-12100",
+      "gpu": "Intel UHD Graphics 730 (integrata)",
+      "ram": "8GB DDR4 3200MHz",
+      "stocare": "256GB SSD SATA",
+      "placa_de_baza": "H610M H",
+      "sursa": "400W 80+ Bronze",
+      "pret_estimat": "~1000-1500 lei"
+    },
+    "config_birou_buget_mediu": {
+      "descriere": "Office Confortabil",
+      "cpu": "Intel Core i5-12400",
+      "gpu": "Intel UHD Graphics 730 (integrata)",
+      "ram": "16GB DDR4 3200MHz",
+      "stocare": "512GB NVMe SSD",
+      "placa_de_baza": "B660M DS3H",
+      "sursa": "500W 80+ Bronze",
+      "pret_estimat": "~2000-2800 lei"
+    },
+    "config_birou_buget_mare": {
+      "descriere": "Office Premium",
+      "cpu": "Intel Core i7-12700",
+      "gpu": "NVIDIA RTX 3050",
+      "ram": "32GB DDR4 3200MHz",
+      "stocare": "1TB NVMe SSD",
+      "placa_de_baza": "B660 Pro RS",
+      "sursa": "650W 80+ Gold",
+      "pret_estimat": "~4000-5000 lei"
+    },
+    "config_editare_buget_mic": {
+      "descriere": "Editare Video Entry",
+      "cpu": "AMD Ryzen 5 5600",
+      "gpu": "NVIDIA RTX 3050",
+      "ram": "16GB DDR4 3600MHz",
+      "stocare": "512GB NVMe SSD + 1TB HDD",
+      "placa_de_baza": "B550M DS3H",
+      "sursa": "600W 80+ Bronze",
+      "pret_estimat": "~2500-3500 lei"
+    },
+    "config_editare_buget_mediu": {
+      "descriere": "Editare Video Profesional",
+      "cpu": "AMD Ryzen 7 5700X",
+      "gpu": "NVIDIA RTX 3060 Ti",
+      "ram": "32GB DDR4 3600MHz",
+      "stocare": "1TB NVMe SSD + 2TB HDD",
+      "placa_de_baza": "B550 AORUS Pro",
+      "sursa": "700W 80+ Gold",
+      "pret_estimat": "~5000-6500 lei"
+    },
+    "config_editare_buget_mare": {
+      "descriere": "Editare Video Workstation",
+      "cpu": "AMD Ryzen 9 7900X",
+      "gpu": "NVIDIA RTX 4080",
+      "ram": "64GB DDR5 5200MHz",
+      "stocare": "2TB NVMe SSD Gen4 + 4TB HDD",
+      "placa_de_baza": "X670E AORUS Master",
+      "sursa": "850W 80+ Platinum",
+      "pret_estimat": "~12000-15000 lei"
+    },
+    "config_programare_buget_mic": {
+      "descriere": "Programare Basic",
+      "cpu": "AMD Ryzen 5 5500",
+      "gpu": "AMD Radeon RX 6500 XT",
+      "ram": "16GB DDR4 3200MHz",
+      "stocare": "512GB NVMe SSD",
+      "placa_de_baza": "B450M DS3H",
+      "sursa": "500W 80+ Bronze",
+      "pret_estimat": "~1800-2200 lei"
+    },
+    "config_programare_buget_mediu": {
+      "descriere": "Programare Confortabil",
+      "cpu": "AMD Ryzen 7 5700X",
+      "gpu": "NVIDIA RTX 3060",
+      "ram": "32GB DDR4 3600MHz",
+      "stocare": "1TB NVMe SSD",
+      "placa_de_baza": "B550 Pro RS",
+      "sursa": "650W 80+ Gold",
+      "pret_estimat": "~3500-4500 lei"
+    },
+    "config_programare_buget_mare": {
+      "descriere": "Programare / AI / ML Workstation",
+      "cpu": "AMD Ryzen 9 7950X",
+      "gpu": "NVIDIA RTX 4090",
+      "ram": "64GB DDR5 5600MHz",
+      "stocare": "2TB NVMe SSD Gen4",
+      "placa_de_baza": "X670E Taichi",
+      "sursa": "1000W 80+ Platinum",
+      "pret_estimat": "~18000-22000 lei"
+    },
+    "config_scoala_buget_mic": {
+      "descriere": "Scoala / Studiu Basic",
+      "cpu": "Intel Core i3-10100",
+      "gpu": "Intel UHD Graphics 630 (integrata)",
+      "ram": "8GB DDR4 2666MHz",
+      "stocare": "240GB SSD SATA",
+      "placa_de_baza": "H410M H",
+      "sursa": "400W 80+ Bronze",
+      "pret_estimat": "~900-1200 lei"
+    },
+    "config_scoala_buget_mediu": {
+      "descriere": "Scoala / Studiu Confortabil",
+      "cpu": "Intel Core i5-12400",
+      "gpu": "Intel UHD Graphics 730 (integrata)",
+      "ram": "16GB DDR4 3200MHz",
+      "stocare": "512GB NVMe SSD",
+      "placa_de_baza": "H610M S2H",
+      "sursa": "450W 80+ Bronze",
+      "pret_estimat": "~1800-2500 lei"
+    },
+    "config_scoala_buget_mare": {
+      "descriere": "Scoala / Studiu Premium",
+      "cpu": "AMD Ryzen 5 5600",
+      "gpu": "NVIDIA RTX 3050",
+      "ram": "16GB DDR4 3600MHz",
+      "stocare": "512GB NVMe SSD + 1TB HDD",
+      "placa_de_baza": "B550M Pro-VDH WiFi",
+      "sursa": "550W 80+ Gold",
+      "pret_estimat": "~3000-3500 lei"
+    }
+  },
+
+  "niveluri_buget": {
+    "buget_mic": "sub 2500 lei",
+    "buget_mediu": "2500 - 5000 lei",
+    "buget_mare": "peste 5000 lei"
+  },
+
+  "scopuri_disponibile": {
+    "scop_gaming": "Gaming",
+    "scop_birou": "Birou / Office",
+    "scop_editare_video": "Editare Video / Foto",
+    "scop_programare": "Programare",
+    "scop_scoala": "Scoala / Studiu"
+  }
+}
